@@ -8,7 +8,9 @@
 			
 			$this->setFlash('Question: Please change Pop Up to mouse over (soft click)');
 			if(isset($this->request->data['Type']['type'])) {
-				echo 'Selection chosen is '.$this->request->data['Type']['type'];	
+				// echo '<br /><br />';
+				// echo 'Selection chosen is '.$this->request->data['Type']['type'];
+				$this->set('choice',$this->request->data['Type']['type']);	
 			}
 	
 			

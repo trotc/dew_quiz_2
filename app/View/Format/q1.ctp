@@ -1,6 +1,11 @@
 
 <div id="message1">
 
+<?php if(!empty($choice)): ?>
+	<div class="alert alert-success" role="alert">
+  		Chosen Type Was...<?= $choice; ?>
+	</div>
+<?php endif; ?>
 
 <?php echo $this->Form->create('Type',array('id'=>'form_type','type'=>'file','class'=>'','method'=>'POST','autocomplete'=>'off','inputDefaults'=>array(
 				
